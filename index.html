@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>CashProofAI.com — Ultra-Premium AI Domain For Sale</title>
+<meta name="description" content="CashProofAI.com — Ultra-premium AI domain for sale. BIN $49,999. The definitive brand at the intersection of AI and financial proof of value."/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --gold:#C9A84C;--gold-light:#E8C96A;--gold-dark:#A07830;
+  --navy:#050E1A;--navy-mid:#0A1628;--navy-card:#0D1F3C;
+  --white:#FFFFFF;--off-white:#F5F0E8;--muted:#8892A4;
+  --border:rgba(201,168,76,0.25);--green:#4dff88;
+}
+html{scroll-behavior:smooth;}
+body{background:var(--navy);color:var(--white);font-family:'Inter',sans-serif;min-height:100vh;overflow-x:hidden;}
+
+/* LUXURY AMBIENT */
+body::before{content:'';position:fixed;top:-300px;left:50%;transform:translateX(-50%);width:1000px;height:700px;background:radial-gradient(ellipse,rgba(201,168,76,0.08) 0%,transparent 70%);pointer-events:none;z-index:0;}
+
+/* GOLD BAR */
+.gold-bar{height:3px;background:linear-gradient(90deg,transparent,var(--gold),var(--gold-light),var(--gold),transparent);}
+
+/* TICKER */
+.ticker-wrap{background:rgba(10,22,40,0.95);border-bottom:1px solid var(--border);padding:10px 0;overflow:hidden;position:relative;z-index:99;}
+.ticker-label{display:inline-block;background:linear-gradient(135deg,var(--gold),var(--gold-light));color:#050E1A;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:4px 14px;border-radius:3px;margin-right:20px;flex-shrink:0;}
+.ticker-track{display:flex;align-items:center;}
+.ticker-content{display:flex;align-items:center;animation:ticker 90s linear infinite;white-space:nowrap;}
+.ticker-content a{color:var(--gold-light);font-size:13px;font-weight:500;text-decoration:none;margin-right:48px;}
+.ticker-content a::before{content:'◆ ';font-size:7px;margin-right:6px;color:var(--gold);}
+.ticker-wrap:hover .ticker-content{animation-play-state:paused;}
+@keyframes ticker{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:16px 40px;background:rgba(5,14,26,0.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);}
+.nav-logo{font-family:'Syne',sans-serif;font-size:20px;font-weight:800;letter-spacing:-0.5px;}
+.nav-logo span{background:linear-gradient(135deg,var(--gold),var(--gold-light));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.nav-right{display:flex;align-items:center;gap:16px;}
+.nav-price{font-family:'Syne',sans-serif;font-size:16px;font-weight:800;background:linear-gradient(135deg,var(--gold),var(--gold-light));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.nav-badge{background:rgba(201,168,76,0.15);border:1px solid var(--gold);color:var(--gold);font-size:11px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:1px;text-transform:uppercase;}
+
+/* COUNTDOWN */
+.countdown-bar{background:linear-gradient(90deg,rgba(201,168,76,0.08),rgba(201,168,76,0.15),rgba(201,168,76,0.08));border-bottom:1px solid var(--border);padding:10px 24px;text-align:center;font-size:13px;color:var(--muted);}
+.countdown-bar strong{color:var(--off-white);}
+#countdown-timer{color:var(--gold);font-weight:700;font-family:'Syne',sans-serif;font-size:15px;}
+
+/* HERO */
+.hero{position:relative;z-index:1;text-align:center;padding:80px 24px 60px;}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(201,168,76,0.08);border:1px solid rgba(201,168,76,0.3);border-radius:30px;padding:6px 18px;font-size:12px;font-weight:600;color:var(--gold-light);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:28px;}
+.hero-eyebrow .dot{width:6px;height:6px;background:var(--gold);border-radius:50%;animation:pulse 1.8s ease-in-out infinite;}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:0.4;transform:scale(0.7);}}
+
+.hero h1{font-family:'Syne',sans-serif;font-size:clamp(48px,9vw,88px);font-weight:800;line-height:1;letter-spacing:-3px;margin-bottom:8px;}
+.hero h1 .cash{background:linear-gradient(135deg,var(--gold),var(--gold-light));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.hero h1 .proof{color:var(--white);}
+.hero h1 .ai{background:linear-gradient(135deg,#4DB8FF,var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+
+/* GOLD RING */
+.tld-ring{display:inline-block;position:relative;margin-bottom:28px;}
+.tld-ring::before{content:'';position:absolute;inset:-6px;border-radius:50%;border:2px solid transparent;background:conic-gradient(var(--gold),var(--gold-light),var(--white),var(--gold-light),var(--gold)) border-box;-webkit-mask:linear-gradient(#fff 0 0) padding-box,linear-gradient(#fff 0 0);-webkit-mask-composite:destination-out;mask-composite:exclude;animation:spin 6s linear infinite;}
+@keyframes spin{to{transform:rotate(360deg);}}
+.tld-text{font-family:'Syne',sans-serif;font-size:18px;font-weight:700;color:var(--muted);letter-spacing:4px;text-transform:uppercase;padding:8px 20px;border-radius:30px;background:var(--navy-mid);}
+
+.hero-sub{font-size:clamp(15px,2.5vw,19px);color:var(--muted);max-width:560px;margin:0 auto 36px;line-height:1.6;}
+.hero-sub strong{color:var(--off-white);}
+
+/* GEO */
+#geo-message{font-size:14px;color:var(--gold-light);font-weight:600;margin-bottom:20px;min-height:20px;font-style:italic;}
+
+/* DUAL BLOCKS */
+.dual-blocks{display:flex;gap:16px;justify-content:center;align-items:stretch;flex-wrap:wrap;margin-bottom:28px;}
+.value-counter{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(201,168,76,0.08);border:1px solid rgba(201,168,76,0.4);border-radius:20px;padding:24px 20px;width:260px;min-height:120px;box-sizing:border-box;}
+.value-label{font-size:10px;color:var(--gold);font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:4px;}
+.value-num{font-family:'Syne',sans-serif;font-size:22px;font-weight:800;color:var(--gold-light);line-height:1;margin-bottom:4px;}
+.value-sub{font-size:10px;color:var(--muted);margin-top:2px;}
+.price-block{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;background:var(--navy-card);border:1px solid var(--border);border-radius:20px;padding:24px 20px;width:260px;min-height:120px;box-sizing:border-box;}
+.price-label{font-size:11px;font-weight:600;color:var(--muted);letter-spacing:2px;text-transform:uppercase;}
+.price-bin{font-family:'Syne',sans-serif;font-size:clamp(28px,5vw,42px);font-weight:800;background:linear-gradient(135deg,var(--gold),var(--gold-light));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:-2px;line-height:1;}
+.price-offer{font-size:13px;color:var(--muted);}
+.price-offer span{color:#4DB8FF;font-weight:600;}
+
+/* BUTTONS */
+.cta-group{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:14px;}
+.btn-primary{display:inline-block;background:linear-gradient(135deg,var(--gold),var(--gold-light));color:#050E1A;font-weight:700;font-size:14px;padding:14px 0;border-radius:50px;text-decoration:none;width:180px;text-align:center;transition:transform 0.2s,box-shadow 0.2s;box-shadow:0 4px 24px rgba(201,168,76,0.35);}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(201,168,76,0.5);}
+.btn-sedo{display:inline-block;background:linear-gradient(135deg,#0055aa,#0088ff);color:#fff;font-weight:700;font-size:14px;padding:14px 0;border-radius:50px;text-decoration:none;width:180px;text-align:center;transition:transform 0.2s,box-shadow 0.2s;box-shadow:0 4px 20px rgba(0,85,170,0.35);}
+.btn-sedo:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,85,170,0.5);}
+.btn-atom{display:inline-block;background:linear-gradient(135deg,#6f42c1,#a855f7);color:#fff;font-weight:700;font-size:14px;padding:14px 0;border-radius:50px;text-decoration:none;width:180px;text-align:center;transition:transform 0.2s,box-shadow 0.2s;box-shadow:0 4px 20px rgba(111,66,193,0.35);}
+.btn-atom:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(111,66,193,0.5);}
+.btn-godaddy{display:inline-block;background:linear-gradient(135deg,#00A65A,#00CC6A);color:#fff;font-weight:700;font-size:14px;padding:14px 0;border-radius:50px;text-decoration:none;width:180px;text-align:center;transition:transform 0.2s,box-shadow 0.2s;box-shadow:0 4px 20px rgba(0,166,90,0.35);}
+.btn-godaddy:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,166,90,0.5);}
+.btn-offer{display:inline-block;background:transparent;color:var(--white);font-weight:600;font-size:14px;padding:14px 0;border-radius:50px;text-decoration:none;border:1px solid rgba(255,255,255,0.2);width:180px;text-align:center;transition:border-color 0.2s,background 0.2s;}
+.btn-offer:hover{border-color:var(--gold);background:rgba(201,168,76,0.06);}
+.contact-note{font-size:12px;color:var(--muted);}
+
+/* STATS */
+.stats{position:relative;z-index:1;display:flex;justify-content:center;flex-wrap:wrap;border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:rgba(10,22,40,0.8);margin-bottom:70px;}
+.stat-item{flex:1;min-width:150px;text-align:center;padding:28px 20px;border-right:1px solid var(--border);}
+.stat-item:last-child{border-right:none;}
+.stat-num{font-family:'Syne',sans-serif;font-size:26px;font-weight:800;background:linear-gradient(135deg,var(--gold),var(--gold-light));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;margin-bottom:6px;}
+.stat-label{font-size:11px;color:var(--muted);font-weight:500;letter-spacing:0.5px;}
+
+/* SECTIONS */
+.section{position:relative;z-index:1;max-width:1000px;margin:0 auto 70px;padding:0 24px;}
+.section-eyebrow{font-size:11px;font-weight:700;color:var(--gold);letter-spacing:3px;text-transform:uppercase;margin-bottom:10px;}
+.section-title{font-family:'Syne',sans-serif;font-size:clamp(26px,4vw,38px);font-weight:800;letter-spacing:-1px;margin-bottom:40px;line-height:1.1;}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;}
+.card{background:var(--navy-card);border:1px solid var(--border);border-radius:16px;padding:26px;transition:border-color 0.2s,transform 0.2s;}
+.card:hover{border-color:var(--gold);transform:translateY(-3px);}
+.card-icon{font-size:26px;margin-bottom:12px;}
+.card h3{font-family:'Syne',sans-serif;font-size:16px;font-weight:700;margin-bottom:8px;color:var(--off-white);}
+.card p{font-size:13px;color:var(--muted);line-height:1.65;}
+
+/* COMPARABLE */
+.comparable{background:var(--navy-card);border:1px solid rgba(77,255,136,0.3);border-radius:20px;padding:32px 36px;text-align:center;max-width:600px;margin:0 auto;}
+.comparable-label{font-size:11px;color:var(--green);font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;}
+.comparable-sale{font-family:'Syne',sans-serif;font-size:24px;font-weight:800;margin-bottom:8px;}
+.comparable-sale span{background:linear-gradient(135deg,var(--gold),var(--gold-light));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.comparable-note{font-size:13px;color:var(--muted);line-height:1.6;}
+
+/* SALES TABLE */
+.sales-section{position:relative;z-index:1;max-width:820px;margin:0 auto 70px;padding:0 24px;}
+.sales-box{background:var(--navy-card);border:1px solid rgba(201,168,76,0.3);border-radius:20px;padding:32px 36px;}
+.sales-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:12px;}
+.sales-title{font-family:'Syne',sans-serif;font-size:20px;font-weight:800;color:var(--off-white);}
+.sales-live{display:inline-flex;align-items:center;gap:6px;background:rgba(255,50,50,0.15);border:1px solid rgba(255,50,50,0.5);border-radius:20px;padding:4px 14px;font-size:11px;font-weight:700;color:#ff4444;letter-spacing:1px;text-transform:uppercase;}
+.flash-dot{width:7px;height:7px;background:#ff4444;border-radius:50%;animation:fd 1s ease-in-out infinite;}
+@keyframes fd{0%,100%{opacity:1;}50%{opacity:0;}}
+.sales-table{width:100%;border-collapse:collapse;}
+.sales-table th{font-size:11px;font-weight:700;color:var(--muted);letter-spacing:1.5px;text-transform:uppercase;padding:8px 12px;text-align:left;border-bottom:1px solid var(--border);}
+.sales-table td{font-size:14px;padding:12px;border-bottom:1px solid rgba(255,255,255,0.05);vertical-align:middle;}
+.sales-table tr:last-child td{border-bottom:none;}
+.sales-table tr:hover td{background:rgba(201,168,76,0.04);}
+.domain-name{font-weight:600;color:var(--off-white);}
+.sale-price{font-family:'Syne',sans-serif;font-weight:800;color:var(--green);font-size:15px;}
+.sale-date{color:var(--muted);font-size:13px;}
+.sale-venue{background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.2);color:var(--gold-light);font-size:11px;font-weight:600;padding:3px 10px;border-radius:10px;}
+.sales-note{font-size:12px;color:var(--muted);margin-top:14px;font-style:italic;}
+
+/* PORTFOLIO SECTION */
+.portfolio-section{position:relative;z-index:1;max-width:900px;margin:0 auto 70px;padding:0 24px;}
+.portfolio-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;}
+.portfolio-card{background:var(--navy-card);border:1px solid var(--border);border-radius:16px;padding:22px 24px;text-decoration:none;transition:border-color 0.2s,transform 0.2s;display:block;}
+.portfolio-card:hover{border-color:var(--gold);transform:translateY(-3px);}
+.portfolio-flag{font-size:28px;margin-bottom:8px;}
+.portfolio-domain{font-family:'Syne',sans-serif;font-size:18px;font-weight:800;color:var(--off-white);margin-bottom:4px;}
+.portfolio-domain span{background:linear-gradient(135deg,var(--gold),var(--gold-light));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.portfolio-price{font-size:12px;color:var(--muted);}
+.portfolio-price strong{color:var(--green);}
+.portfolio-label{font-size:10px;color:var(--gold);font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-top:6px;}
+
+/* FORM */
+.form-section{position:relative;z-index:1;max-width:580px;margin:0 auto 70px;padding:0 24px;}
+.form-box{background:var(--navy-card);border:1px solid var(--border);border-radius:20px;padding:36px;}
+.form-box h2{font-family:'Syne',sans-serif;font-size:24px;font-weight:800;margin-bottom:6px;}
+.form-box .form-sub{font-size:13px;color:var(--muted);margin-bottom:24px;line-height:1.5;}
+.form-group{margin-bottom:16px;}
+.form-group label{display:block;font-size:12px;font-weight:600;color:var(--muted);letter-spacing:1px;text-transform:uppercase;margin-bottom:6px;}
+.form-group input,.form-group select,.form-group textarea{width:100%;background:var(--navy);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:12px 16px;color:var(--white);font-size:14px;font-family:'Inter',sans-serif;transition:border-color 0.2s;outline:none;}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--gold);}
+.form-group select option{background:var(--navy);}
+.form-group textarea{resize:vertical;min-height:80px;}
+.btn-submit{width:100%;background:linear-gradient(135deg,var(--gold),var(--gold-light));color:#050E1A;font-weight:700;font-size:15px;padding:16px;border-radius:50px;border:none;cursor:pointer;font-family:'Inter',sans-serif;transition:transform 0.2s,box-shadow 0.2s;box-shadow:0 4px 20px rgba(201,168,76,0.3);margin-top:8px;}
+.btn-submit:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(201,168,76,0.5);}
+.form-success{display:none;text-align:center;padding:20px;background:rgba(19,136,8,0.15);border:1px solid #138808;border-radius:12px;color:var(--green);font-weight:600;font-size:15px;margin-top:16px;}
+
+
+
+/* MAIN FOOTER */
+footer{position:relative;z-index:1;text-align:center;padding:24px;border-top:1px solid var(--border);font-size:12px;color:var(--muted);}
+footer strong{color:var(--off-white);}
+
+/* RESPONSIVE */
+@media(max-width:600px){
+  nav{padding:12px 16px;}
+  .stat-item{min-width:130px;}
+  .form-box{padding:24px 18px;}
+  
+  .sales-box{padding:24px 16px;}
+}
+</style>
+</head>
+<body>
+
+<div class="gold-bar"></div>
+
+<!-- NEWS TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker-track">
+    <span class="ticker-label">💰 AI Domain News</span>
+    <div class="ticker-content" id="ticker-content">
+      <a href="https://news.google.com/search?q=AI+domain+sales" target="_blank">Loading latest AI domain market news...</a>
+    </div>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo"><span>CashProof</span>AI<span style="color:var(--muted);font-size:14px;">.com</span></div>
+  <div class="nav-right">
+    <div class="nav-price">$49,999 BIN</div>
+    <div class="nav-badge">💎 Premium</div>
+  </div>
+</nav>
+
+<!-- COUNTDOWN -->
+<div class="countdown-bar">
+  <strong>⚡ Price Review In:</strong> &nbsp;<span id="countdown-timer">--</span>&nbsp; — Secure current price before review date.
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-eyebrow">
+    <span class="dot"></span>
+    Ultra-Premium AI Domain — Available Now
+  </div>
+
+  <h1>
+    <span class="cash">Cash</span><span class="proof">Proof</span><span class="ai">AI</span>
+  </h1>
+
+  <div class="tld-ring">
+    <span class="tld-text">.com</span>
+  </div>
+
+  <p class="hero-sub">
+    The domain where <strong>financial credibility meets artificial intelligence.</strong> Short. Powerful. Category-defining. Built for the next generation of AI-powered fintech brands.
+  </p>
+
+  <div id="geo-message"></div>
+
+  <!-- DUAL BLOCKS -->
+  <div class="dual-blocks">
+    <div class="value-counter">
+      <div class="value-label">📈 Estimated Value</div>
+      <div class="value-num">$97,948+</div>
+      <div class="value-sub">Based on <strong style="color:var(--green);">ExpressAI.com</strong> comp sale</div>
+    </div>
+    <div class="price-block">
+      <div class="price-label">Buy It Now</div>
+      <div class="price-bin">$49,999</div>
+      <div class="price-offer">Offers from <span>$29,999</span></div>
+    </div>
+  </div>
+
+  <div class="cta-group">
+    <a href="https://www.afternic.com/domain/cashproofai.com" target="_blank" class="btn-primary">🔒 Afternic</a>
+    <a href="https://sedo.com/search/details/?domain=cashproofai.com" target="_blank" class="btn-sedo">🌐 Sedo</a>
+    <a href="https://www.atom.com/name/CashProofAi" target="_blank" class="btn-atom">⚡ Atom</a>
+    <a href="https://www.godaddy.com/en-in/domainsearch/find?domainToCheck=cashproofai.com" target="_blank" class="btn-godaddy">🟢 GoDaddy</a>
+  </div>
+  <div style="margin-top:16px;">
+    <a href="#make-offer" class="btn-offer">💬 Make a Direct Offer</a>
+  </div>
+  <p class="contact-note" style="margin-top:12px;">Secure transfer via Afternic / Sedo / Atom / GoDaddy &nbsp;·&nbsp; Escrow available</p>
+</section>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stat-item">
+    <div class="stat-num">$97,948</div>
+    <div class="stat-label">ExpressAI.com Sold (2026)</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">$49,999</div>
+    <div class="stat-label">CashProofAI BIN Price</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">2X</div>
+    <div class="stat-label">AI Fintech Market Growth</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">10 Chars</div>
+    <div class="stat-label">Short. Exact. Brandable.</div>
+  </div>
+</div>
+
+<!-- WHY THIS DOMAIN -->
+<div class="section">
+  <div class="section-eyebrow">Why CashProofAI.com</div>
+  <div class="section-title">A category-defining name.</div>
+  <div class="cards">
+    <div class="card">
+      <div class="card-icon">💰</div>
+      <h3>AI Meets Fintech</h3>
+      <p>CashProof + AI is the perfect brand for AI-powered financial verification, fraud detection, income proof platforms, and agentic finance tools — the fastest growing AI vertical in 2026.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🔍</div>
+      <h3>Exact-Match Brand Intent</h3>
+      <p>"Cash Proof AI" speaks directly to the market for AI-powered financial credibility tools. No ambiguity. No competitor owns this exact name. Zero trademark conflict.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">📈</div>
+      <h3>Proven Category Comparable</h3>
+      <p>ExpressAI.com sold for $97,948 on Atom.com in March 2026. CashProofAI.com is a stronger, more specific brand — priced well below comparable market evidence.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🤖</div>
+      <h3>Agentic AI Era Ready</h3>
+      <p>As AI agents handle financial transactions autonomously, brands that combine cash, proof, and AI will command premium valuations. This domain is built for that exact future.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🏦</div>
+      <h3>Ideal for Fintech Brands</h3>
+      <p>Banks, lending platforms, income verification services, crypto proof tools, and AI financial advisors all need a domain that communicates trust and intelligence instantly.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">⏳</div>
+      <h3>First-Mover Advantage</h3>
+      <p>The AI fintech domain market is consolidating rapidly. The buyer who acquires CashProofAI.com now secures a category-defining asset before valuations reflect the full AI wave.</p>
+    </div>
+  </div>
+</div>
+
+<!-- COMPARABLE -->
+<div class="section">
+  <div class="section-eyebrow">Comparable Sale</div>
+  <div class="section-title">The market has already spoken.</div>
+  <div class="comparable">
+    <div class="comparable-label">✅ Verified Sale — March 2026</div>
+    <div class="comparable-sale"><span>ExpressAI.com</span> — Sold $97,948</div>
+    <p class="comparable-note">Sold via Atom.com in March 2026. CashProofAI.com is a more specific, more brandable, and more commercially focused AI domain — listed at nearly half the comparable sale price. The opportunity gap is clear.</p>
+  </div>
+</div>
+
+<!-- RECENT AI DOMAIN SALES -->
+<div class="sales-section">
+  <div class="sales-box">
+    <div class="sales-header">
+      <div class="sales-title">💎 Recent Premium AI Domain Sales</div>
+      <div class="sales-live"><span class="flash-dot"></span> Live Market Data</div>
+    </div>
+    <table class="sales-table">
+      <thead>
+        <tr>
+          <th>Domain</th>
+          <th>Sale Price</th>
+          <th>Date</th>
+          <th>Venue</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="domain-name">ExpressAI.com</span></td>
+          <td><span class="sale-price">$97,948</span></td>
+          <td><span class="sale-date">2026-03-23</span></td>
+          <td><span class="sale-venue">Atom.com</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="sales-note">&#128272; Data sourced from public domain sale records. Premium AI .com sales only.</p>
+  </div>
+</div>
+
+<!-- PORTFOLIO -->
+<div class="portfolio-section">
+  <div class="section-eyebrow">Also Available</div>
+  <div class="section-title" style="max-width:900px;padding:0 24px;">From the same Geo-AI domain portfolio.</div>
+  <div class="portfolio-grid">
+    <a href="https://indiaonai.com" target="_blank" class="portfolio-card">
+      <div class="portfolio-flag">🇮🇳</div>
+      <div class="portfolio-domain"><span>India</span>OnAI.com</div>
+      <div class="portfolio-price">BIN <strong>$999</strong> &nbsp;·&nbsp; Offer from $599</div>
+      <div class="portfolio-label">Available Now</div>
+    </a>
+    <a href="https://germanyonai.com" target="_blank" class="portfolio-card">
+      <div class="portfolio-flag">🇩🇪</div>
+      <div class="portfolio-domain"><span>Germany</span>OnAI.com</div>
+      <div class="portfolio-price">BIN <strong>$999</strong> &nbsp;·&nbsp; Offer from $599</div>
+      <div class="portfolio-label">Available Now</div>
+    </a>
+    <a href="https://chinaonai.com" target="_blank" class="portfolio-card">
+      <div class="portfolio-flag">🇨🇳</div>
+      <div class="portfolio-domain"><span>China</span>OnAI.com</div>
+      <div class="portfolio-price">BIN <strong>$999</strong> &nbsp;·&nbsp; Offer from $599</div>
+      <div class="portfolio-label">Available Now</div>
+    </a>
+  </div>
+</div>
+
+<!-- OFFER FORM -->
+<div class="form-section" id="make-offer">
+  <div class="form-box">
+    <h2>Make an Offer</h2>
+    <p class="form-sub">Serious offers from $29,999 considered. We respond within 24 hours.</p>
+    <form id="offer-form" action="https://formspree.io/f/beherark1964@gmail.com" method="POST">
+      <div class="form-group">
+        <label>Your Name</label>
+        <input type="text" name="name" placeholder="John Smith" required/>
+      </div>
+      <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" name="email" placeholder="john@company.com" required/>
+      </div>
+      <div class="form-group">
+        <label>Your Offer (USD)</label>
+        <select name="offer_amount" required>
+          <option value="">Select offer range</option>
+          <option value="$29,999 - $34,999">$29,999 — $34,999</option>
+          <option value="$35,000 - $39,999">$35,000 — $39,999</option>
+          <option value="$40,000 - $44,999">$40,000 — $44,999</option>
+          <option value="$45,000 - $49,999">$45,000 — $49,999 (BIN)</option>
+          <option value="Above $49,999">Above $49,999</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Intended Use (optional)</label>
+        <textarea name="intended_use" placeholder="e.g. AI fintech platform, income verification tool, crypto proof service..."></textarea>
+      </div>
+      <input type="hidden" name="_subject" value="New Offer for CashProofAI.com"/>
+      <input type="hidden" name="_next" value="https://cashproofai.com"/>
+      <button type="submit" class="btn-submit">📨 Submit My Offer</button>
+    </form>
+    <div class="form-success" id="form-success">✅ Offer received! We will reply within 24 hours.</div>
+  </div>
+</div>
+
+
+</div>
+
+<footer>
+  <strong>CashProofAI.com</strong> is owned and offered for sale by its registrant. &nbsp;|&nbsp;
+  Secure transfers via Afternic / Escrow.com &nbsp;|&nbsp;
+  <a href="mailto:beherark1964@gmail.com" style="color:var(--gold);text-decoration:none;">beherark1964@gmail.com</a>
+</footer>
+
+<div class="gold-bar"></div>
+
+<script>
+// 1. LIVE NEWS TICKER
+async function loadNewsRSS() {
+  const query = encodeURIComponent('AI domain sales fintech artificial intelligence 2026');
+  const rssUrl = `https://news.google.com/rss/search?q=${query}&hl=en&gl=US&ceid=US:en`;
+  const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(rssUrl)}`;
+  try {
+    const res = await fetch(proxyUrl);
+    const data = await res.json();
+    const parser = new DOMParser();
+    const xml = parser.parseFromString(data.contents, 'text/xml');
+    const items = xml.querySelectorAll('item');
+    if (!items.length) throw new Error('No items');
+    let html = '';
+    items.forEach((item, i) => {
+      if (i >= 12) return;
+      const title = item.querySelector('title')?.textContent || '';
+      const link = item.querySelector('link')?.textContent || '#';
+      html += `<a href="${link}" target="_blank" rel="nofollow">${title}</a>`;
+    });
+    const ticker = document.getElementById('ticker-content');
+    ticker.innerHTML = html + html;
+  } catch(e) {
+    const fallbacks = [
+      {t:'ExpressAI.com sells for $97,948 on Atom.com in March 2026',u:'https://atom.com'},
+      {t:'AI domain market hits record valuations as fintech AI investments surge',u:'https://news.google.com/search?q=AI+domain+sales+2026'},
+      {t:'Premium AI .com domains see 3x valuation increase in first half of 2026',u:'https://news.google.com/search?q=AI+domain+value+2026'},
+      {t:'AI-powered fintech platforms raise $50B+ globally in 2026',u:'https://news.google.com/search?q=AI+fintech+2026'},
+      {t:'Domain investors report record returns on AI keyword domains in 2026',u:'https://news.google.com/search?q=AI+domain+invest+2026'},
+      {t:'CashProofAI.com available: premium AI fintech domain open for acquisition',u:'https://cashproofai.com'},
+      {t:'Geo-AI domains IndiaOnAI.com, GermanyOnAI.com, ChinaOnAI.com available now',u:'https://indiaonai.com'},
+    ];
+    let html = fallbacks.map(f=>`<a href="${f.u}" target="_blank" rel="nofollow">${f.t}</a>`).join('');
+    document.getElementById('ticker-content').innerHTML = html + html;
+  }
+}
+loadNewsRSS();
+
+// 2. COUNTDOWN TIMER
+function startCountdown() {
+  let deadline;
+  try {
+    const stored = localStorage.getItem('cashproofai_deadline');
+    deadline = stored ? new Date(stored) : null;
+  } catch(e) { deadline = null; }
+  if (!deadline || isNaN(deadline)) {
+    deadline = new Date();
+    deadline.setDate(deadline.getDate() + 15);
+    try { localStorage.setItem('cashproofai_deadline', deadline.toISOString()); } catch(e) {}
+  }
+  function update() {
+    const diff = deadline - new Date();
+    if (diff <= 0) { document.getElementById('countdown-timer').textContent = 'Price under review'; return; }
+    const d = Math.floor(diff/86400000);
+    const h = Math.floor((diff%86400000)/3600000);
+    const m = Math.floor((diff%3600000)/60000);
+    const s = Math.floor((diff%60000)/1000);
+    document.getElementById('countdown-timer').textContent = `${d}d ${String(h).padStart(2,'0')}h ${String(m).padStart(2,'0')}m ${String(s).padStart(2,'0')}s`;
+  }
+  update(); setInterval(update, 1000);
+}
+startCountdown();
+
+// 3. GEO DETECTION
+async function detectGeo() {
+  try {
+    const res = await fetch('https://ipapi.co/json/');
+    const data = await res.json();
+    const country = data.country_name || '';
+    const messages = {
+      "United States": "🇺🇸 Welcome! US AI fintech investors are the primary buyers for premium AI domains like CashProofAI.com.",
+      "India": "🇮🇳 Namaste! India AI fintech market is booming — CashProofAI.com is the perfect brand for the next unicorn.",
+      "Germany": "🇩🇪 Willkommen! European AI fintech regulation creates massive demand for trusted AI financial brands.",
+      "France": "🇫🇷 Bienvenue! French AI fintech investment is surging — CashProofAI.com is built for this market.",
+      "United Kingdom": "🇬🇧 Welcome! London is Europe's fintech capital — CashProofAI.com is your next flagship AI brand.",
+      "China": "🇨🇳 Welcome! China AI fintech market leads globally — CashProofAI.com is an ideal acquisition target.",
+      "Japan": "🇯🇵 Welcome! Japan AI financial innovation is accelerating — own the domain that defines it.",
+      "Singapore": "🇸🇬 Welcome! Singapore is Asia's AI fintech hub — CashProofAI.com fits perfectly.",
+    };
+    const msg = messages[country] || `🌍 Welcome from ${country}! CashProofAI.com is a premium AI fintech domain available for immediate acquisition.`;
+    document.getElementById('geo-message').textContent = msg;
+  } catch(e) {
+    document.getElementById('geo-message').textContent = '🌍 Welcome! CashProofAI.com — the premium AI fintech domain available for immediate acquisition.';
+  }
+}
+detectGeo();
+
+// 4. FORM SUBMIT
+document.getElementById('offer-form').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const btn = this.querySelector('.btn-submit');
+  btn.textContent = 'Sending...'; btn.disabled = true;
+  try {
+    const res = await fetch(this.action, {method:'POST',body:new FormData(this),headers:{'Accept':'application/json'}});
+    if (res.ok) { this.style.display='none'; document.getElementById('form-success').style.display='block'; }
+    else { btn.textContent='Try Again'; btn.disabled=false; }
+  } catch(e) { btn.textContent='Try Again'; btn.disabled=false; }
+});
+</script>
+</body>
+</html>
