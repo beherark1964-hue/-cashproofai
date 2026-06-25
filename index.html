@@ -72,13 +72,13 @@ nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-co
 /* DUAL BLOCKS */
 .dual-blocks{display:flex;gap:16px;justify-content:center;align-items:stretch;flex-wrap:wrap;margin-bottom:28px;}
 .value-counter{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(201,168,76,0.08);border:1px solid rgba(201,168,76,0.4);border-radius:20px;padding:24px 20px;width:260px;min-height:120px;box-sizing:border-box;}
-.value-label{font-size:10px;color:var(--gold);font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:4px;}
-.value-num{font-family:'Syne',sans-serif;font-size:22px;font-weight:800;color:var(--gold-light);line-height:1;margin-bottom:4px;}
-.value-sub{font-size:10px;color:var(--muted);margin-top:2px;}
+.value-label{font-size:9px;color:var(--gold);font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:4px;}
+.value-num{font-family:'Syne',sans-serif;font-size:17px;font-weight:800;color:var(--gold-light);line-height:1;margin-bottom:4px;}
+.value-sub{font-size:9px;color:var(--muted);margin-top:2px;}
 .price-block{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;background:var(--navy-card);border:1px solid var(--border);border-radius:20px;padding:24px 20px;width:260px;min-height:120px;box-sizing:border-box;}
-.price-label{font-size:11px;font-weight:600;color:var(--muted);letter-spacing:2px;text-transform:uppercase;}
-.price-bin{font-family:'Syne',sans-serif;font-size:clamp(28px,5vw,42px);font-weight:800;background:linear-gradient(135deg,var(--gold),var(--gold-light));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:-2px;line-height:1;}
-.price-offer{font-size:13px;color:var(--muted);}
+.price-label{font-size:9px;font-weight:600;color:var(--muted);letter-spacing:1.5px;text-transform:uppercase;}
+.price-bin{font-family:'Syne',sans-serif;font-size:clamp(22px,3vw,32px);font-weight:800;background:linear-gradient(135deg,var(--gold),var(--gold-light));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:-1px;line-height:1;}
+.price-offer{font-size:12px;color:var(--muted);}
 .price-offer span{color:#4DB8FF;font-weight:600;}
 
 /* BUTTONS */
@@ -91,6 +91,8 @@ nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-co
 .btn-atom:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(111,66,193,0.5);}
 .btn-godaddy{display:inline-block;background:linear-gradient(135deg,#00A65A,#00CC6A);color:#fff;font-weight:700;font-size:14px;padding:14px 0;border-radius:50px;text-decoration:none;width:180px;text-align:center;transition:transform 0.2s,box-shadow 0.2s;box-shadow:0 4px 20px rgba(0,166,90,0.35);}
 .btn-godaddy:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,166,90,0.5);}
+.btn-spaceship{display:inline-block;background:linear-gradient(135deg,#1a1a2e,#16213e);color:#fff;font-weight:700;font-size:14px;padding:14px 0;border-radius:50px;text-decoration:none;width:180px;text-align:center;transition:transform 0.2s,box-shadow 0.2s;box-shadow:0 4px 20px rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);}
+.btn-spaceship:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(255,255,255,0.2);border-color:var(--gold);}
 .btn-offer{display:inline-block;background:transparent;color:var(--white);font-weight:600;font-size:14px;padding:14px 0;border-radius:50px;text-decoration:none;border:1px solid rgba(255,255,255,0.2);width:180px;text-align:center;transition:border-color 0.2s,background 0.2s;}
 .btn-offer:hover{border-color:var(--gold);background:rgba(201,168,76,0.06);}
 .contact-note{font-size:12px;color:var(--muted);}
@@ -250,11 +252,12 @@ footer strong{color:var(--off-white);}
     <a href="https://sedo.com/search/details/?domain=cashproofai.com" target="_blank" class="btn-sedo">🌐 Sedo</a>
     <a href="https://www.atom.com/name/CashProofAi" target="_blank" class="btn-atom">⚡ Atom</a>
     <a href="https://www.godaddy.com/en-in/domainsearch/find?domainToCheck=cashproofai.com" target="_blank" class="btn-godaddy">🟢 GoDaddy</a>
+    <a href="https://www.spaceship.com/domain-search/?query=cashproofai.com&beast=false&tab=domains" target="_blank" class="btn-spaceship">🚀 Spaceship</a>
   </div>
   <div style="margin-top:16px;">
     <a href="#make-offer" class="btn-offer">💬 Make a Direct Offer</a>
   </div>
-  <p class="contact-note" style="margin-top:12px;">Secure transfer via Afternic / Sedo / Atom / GoDaddy &nbsp;·&nbsp; Escrow available</p>
+  <p class="contact-note" style="margin-top:12px;">Secure transfer via Afternic / Sedo / Atom / GoDaddy / Spaceship &nbsp;·&nbsp; Escrow available</p>
 </section>
 
 <!-- STATS -->
