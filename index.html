@@ -34,11 +34,16 @@
     .ticker-wrap{background:rgba(10,22,40,0.95);border-bottom:1px solid var(--border);padding:9px 0;overflow:hidden;position:relative;z-index:99;}
     .ticker-label{display:inline-flex;background:linear-gradient(135deg,var(--gold),var(--gold-light));color:#050E1A;font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:3px 10px;border-radius:3px;margin-right:16px;flex-shrink:0;white-space:nowrap;}
     .ticker-track{display:flex;align-items:center;width:100%;}
-    .ticker-content{display:flex;align-items:center;animation:ticker 90s linear infinite;white-space:nowrap;}
+    .ticker-content{
+      display:flex;
+      align-items:center;
+      animation:ticker 45s linear infinite;
+      white-space:nowrap;
+    }
     .ticker-content a{color:var(--gold-light);font-size:12px;font-weight:500;text-decoration:none;margin-right:40px;}
     .ticker-content a::before{content:'◆ ';font-size:7px;margin-right:5px;color:var(--gold);}
-    @keyframes ticker{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
     .ticker-wrap:hover .ticker-content{animation-play-state:paused;}
+    @keyframes ticker{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
 
     nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:10px 16px;background:rgba(5,14,26,0.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);}
     .nav-logo{font-family:var(--font-syne);font-size:16px;font-weight:800;letter-spacing:-0.3px;white-space:nowrap;}
@@ -279,6 +284,8 @@
 </div>
 
 <section class="hero">
+  <div class="hero-eyebrow"><span class="dot"></span>Ultra-Premium AI Domain — Available Now</div>
+
   <div class="domain-line">
     <span class="cash">Cash</span><span class="proof">Proof</span><span class="ai">AI</span><span class="dotcom">.com</span>
   </div>
@@ -394,7 +401,7 @@
 </div>
 
 <script>
-// ─── TICKER ───
+// ─── TICKER — FAST 45s ───
 async function loadNewsRSS() {
   const query = encodeURIComponent('AI domain sales fintech 2026');
   const rssUrl = `https://news.google.com/rss/search?q=${query}&hl=en&gl=US&ceid=US:en`;
@@ -413,8 +420,15 @@ async function loadNewsRSS() {
       const link = item.querySelector('link')?.textContent || '#';
       html += `<a href="${link}" target="_blank" rel="nofollow">${title}</a>`;
     });
-    document.getElementById('ticker-content').innerHTML = html + html;
+    const el = document.getElementById('ticker-content');
+    if (el) {
+      el.innerHTML = html + html;
+      el.style.animation = 'none';
+      el.offsetHeight;
+      el.style.animation = 'ticker 45s linear infinite';
+    }
   } catch(e) {
+    // Fallback — tripled for seamless fast loop
     const fallbacks = [
       {t:'ExpressAI.com sells for $97,948 on Atom.com — March 2026','https://atom.com'},
       {t:'Premium AI .com domains see record valuations in first half of 2026','https://news.google.com/search?q=AI+domain+sales+2026'},
@@ -422,7 +436,13 @@ async function loadNewsRSS() {
       {t:'CashProofAI.com available — premium AI fintech domain open for acquisition','https://cashproofai.com'},
     ];
     let html = fallbacks.map(f => `<a href="${f[1]}" target="_blank" rel="nofollow">${f[0]}</a>`).join('');
-    document.getElementById('ticker-content').innerHTML = html + html;
+    const el = document.getElementById('ticker-content');
+    if (el) {
+      el.innerHTML = html + html + html;
+      el.style.animation = 'none';
+      el.offsetHeight;
+      el.style.animation = 'ticker 45s linear infinite';
+    }
   }
 }
 loadNewsRSS();
